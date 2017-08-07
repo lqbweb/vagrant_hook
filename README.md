@@ -14,7 +14,8 @@ Feel free to contribute.
 
 In your vagrant box add something like:
 
-```config.vagrant_hook.check_outdated do |host|
+```ruby
+config.vagrant_hook.check_outdated do |host|
     puts "hello world!"
 end
 ```
