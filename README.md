@@ -8,12 +8,13 @@ Feel free to contribute.
 
 # Installation
 
-vagrant plugin install vagrant_hook
+> vagrant plugin install vagrant_hook
 
 # How to use
 
 In your vagrant box add something like:
 
-config.vagrant_hook.check_outdated do |host|
+```config.vagrant_hook.check_outdated do |host|
     puts "hello world!"
 end
+```
