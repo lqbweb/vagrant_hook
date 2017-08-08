@@ -22,7 +22,7 @@ module VagrantPlugins
 		  @host = env[:host]
 		  
 		  callbacks = @callbacks_list.call
-		  puts callbacks.to_yaml
+		  
 		  callbacks.each do | clbk |
 			clbk[:mproc].call(@host)
 		  end
